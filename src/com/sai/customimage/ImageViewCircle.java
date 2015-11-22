@@ -55,8 +55,8 @@ public class ImageViewCircle extends ImageView {
         paint.setAntiAlias(true);
         paint.setShader(shader);
         
-       float circleCenterX = originalBitmap.getWidth() *0.5f;
-       float circleCenterY = originalBitmap.getHeight() *0.5f;
+       float circleCenterX = canvas.getWidth() * 0.5f; //originalBitmap.getWidth() * 0.5f;
+       float circleCenterY = canvas.getHeight() * 0.5f; //originalBitmap.getHeight() * 0.5f;
        
        float radius=circleCenterX<=circleCenterY?circleCenterX:circleCenterY;
       
